@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+.grid{
+    display:inline-grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 2px;
+    background-color: #e7e7e7;
+    padding: 20px;
+    box-sizing: 2px 2px 12px #e7e7e7;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    align-items: center;
+    transition: 1s;
+}
+.grid div{
+height: 100px;
+background-color: white;
+}
+form{
+    display: flex;
+    width: 500px;
+}
+form input{
+    flex-grow: 1;
+}
