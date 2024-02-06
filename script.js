@@ -7,11 +7,7 @@ gridItem.innerText=i;
 gridItem.className="grid-item"
 gridContainer.appendChild(gridItem);
 }
-function removePrevious{
-	if(previousSelectedElement){
-    previousSelectedElement.style.backgroundColor="white";
-}
-}
+
 
 let previousSelectedElement=null;
 const form=document.querySelector("#form")
@@ -21,7 +17,11 @@ let cellid=form.inputid.value;
 let selectedcolor=form.colorid.value;
 let cell=document.getElementById(cellid);
 cell.style.backgroundColor=selectedcolor;
-	removePrevious();
+	if(previousSelectedElement){
+    previousSelectedElement.style.backgroundColor="white";
+}
+
+
 previousSelectedElement=cell;
 });
 
